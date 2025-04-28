@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/bamboUi.css">
+    <link rel="stylesheet" href="style/main-app-login.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.2/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style/app-main-keyframe.css">
+    <link rel="stylesheet" href="style/app-main.responsive.css">
+    <titl></title>
+</head>
+<body>
+
+    <!--* NAV BAR -->
+    <div class="nav-dot drop-shadow-xl">
+    <div class="dot red" onclick="window.location.href='page1.html';"></div>
+    <div class="dot yellow" onclick="window.location.href='page2.html';"></div>
+    <div class="dot green" onclick="window.location.href='page3.html';"></div>
+    </div>
+
+
+    <!--todo: UBAH HREF KE INDEX UTAMA -->
+    <a href="#" class="home flex items-center w-fit group rounded-2xl p-2 transition-all duration-300 overflow-hidden bg-white border border-transparent hover:border-black cursor-pointer">
+      <div class="flex items-center pr-2 transition-all duration-300 group-hover:pr-8">
+        <div class="w-[30px] h-[30px] text-black transition-colors duration-300">
+          <img src="/img/home.png" alt="home" class="w-full h-full object-contain">
+        </div>
+    
+        <span class="ml-2 text-black opacity-0 group-hover:opacity-100 transform group-hover:translate-x-0 -translate-x-4 transition-all duration-300 whitespace-nowrap">
+          Home
+        </span>
+      </div>
+    </a>
+    
+    <div class="img-craiyon">
+      <img src="img/crayon.png" alt="crayon">
+    </div>
+
+    <!--! CARD sign -->
+    <div class="card-sign flex items-end justify-end min-h-screen bg-gray-100">
+        <div class="bg-white p-8 shadow-lg w-full max-w-md">
+          <h2 class="text-2xl font-bold text-gray-800 mb-2"><span id="title-card">Sign</span><span id="title-card-desc"> for free</span></h2>
+          <p class="text-gray-500 mb-6">Sharing Kindness every day.</p>
+      
+          <div class="space-y-4">
+            <button class="flex items-center justify-center w-full py-2 border rounded-full text-gray-700 hover:bg-gray-50">
+              <img  src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" class="h-5 w-5 mr-2">
+               <span id="google-title" >Sign up with Google</span>
+            </button>
+      
+            <button class="flex items-center justify-center w-full py-2 border rounded-full text-gray-700 hover:bg-gray-50">
+                <img src="/img/apple.svg" alt="Google" class="h-5 w-5 mr-2">
+               <span id="apple-title" >Sign up with ID Apple </span>
+            </button>
+          </div>
+      
+          <div class="flex items-center my-6">
+            <div class="flex-grow h-px bg-gray-300"></div>
+            <span class="flex-shrink text-gray-400 mx-4">OR</span>
+            <div class="flex-grow h-px bg-gray-300"></div>
+          </div>
+
+          <div class="flex gap-4 mb-6 justify-center">
+                <button id="sign-button" onclick="sign()" class="bg-black text-white  p-1 pl-4 pr-4">Sign</button>
+                <button id="login-button" onclick="login()" class="border p-1 pl-4 pr-4">Login</button>
+          </div>
+      
+          <form class="space-y-4">
+            <div id="name-card">
+              <label class="block text-sm text-gray-700 mb-1">Name</label>
+              <input type="text" placeholder="Enter real name" class="w-full px-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-black">
+            </div>
+      
+            <div>
+              <label class="block text-sm text-gray-700 mb-1">Email</label>
+              <input type="email" placeholder="Enter your email" class="w-full px-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-black">
+            </div>
+      
+            <div>
+              <label class="block text-sm text-gray-700 mb-1">Password</label>
+              <input type="password" placeholder="Enter your password" class="w-full px-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-black">
+            </div>
+      
+            <button id="submit-button" type="submit" class="w-full bg-black text-white py-2 rounded-full hover:bg-gray-800 transition">Sign up</button>
+          </form>
+      
+          <p class="text-center text-xs text-gray-400 mt-4">
+            You sign you must agree for <a href="#" class="underline">terms of use</a>.
+          </p>
+        </div>
+        
+        <div id="img-right" class="img-cover-right justify-end">
+            <img id="img-lansia" src="img/lansia.png" alt="">
+            <div id="text-cover-top" class="text-cover">Membantu lansia</div>
+            <div id="text-cover-bottom" class="text-cover-bottom">di panti Jompo <hr></div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.2/dist/aos.js"></script>
+    <scri src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></scri>
+    <script src="db/main-Dom.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

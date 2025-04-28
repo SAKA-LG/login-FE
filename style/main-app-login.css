@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Poppins'; 
+    src: url('/font/Poppins-Regular.ttf') format('ttf'), 
+         url('/font/Poppins-SemiBold.ttf') format('ttf');
+    font-weight: normal; 
+    font-style: normal; 
+  }
+
+  body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  }
+
+  /** NAV BAR */
+  .nav-dot {
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+
+  .dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    margin-right: -2px;
+}
+.red { background-color: red; }
+.yellow { background-color: yellow; }
+.green { background-color: rgb(52, 194, 52); }
+
+.text-cover {
+  position: absolute;
+  top: 80%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 3s ease-in-out ;
+  -webkit-animation: fadeIn 3s ease-in-out ;
+}
+
+.text-cover-bottom {
+  position: absolute;
+  top: 88%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 3s ease-in-out ;
+  -webkit-animation: fadeIn 3s ease-in-out ;
+}
+
+.img-cover-right {
+  animation: fadeIn 3s ease-in-out ;
+  -webkit-animation: fadeIn 3s ease-in-out ;
+}
+
+.img-craiyon {
+  position: absolute;
+  width: 30em;
+  margin-left: -30em;
+  opacity: 0;
+  transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  animation: fade-slow 15s ease-in-out;
+  -webkit-animation: fade-slow 20s ease-in-out;
+}
+
+@keyframes fade-slow {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(70%);
+    opacity: 1;
+    -webkit-transform: translateX(70%);
+    -moz-transform: translateX(70%);
+    -ms-transform: translateX(70%);
+    -o-transform: translateX(70%);
+}
+  80% {
+    transform: translateX(70%);
+    opacity: 1;
+    -webkit-transform: translateX(70%);
+    -moz-transform: translateX(70%);
+    -ms-transform: translateX(70%);
+    -o-transform: translateX(70%);
+}
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+
+  .home {
+    margin-left: 150px;
+    margin-top: -40px;
+  }
